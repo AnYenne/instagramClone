@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
-
+import { GuestPage } from './pages/index.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* create a global css and default layout wrap App component*/}
-    <App />
-  </React.StrictMode>,
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
 )

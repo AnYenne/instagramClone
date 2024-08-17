@@ -1,0 +1,58 @@
+.whiteText{
+  color: #fff;
+}
+.outline{
+    outline: 1px solid #333;
+}
+.fullWidth{
+    width: 100%;
+}
+.text{
+    outline: none;
+    border: none;
+}
+.btn{
+    padding: 6px ;
+    margin: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    display: flex;   
+    justify-content: flex-start;
+    align-items: center;
+
+} 
+
+.halfWidth{
+    width: 50%;
+}
+.roundSm{
+    border-radius: 6px;
+}
+.roundMd{
+    border-radius: 25px;
+}
+.roundLg{
+    border-radius: 50px;
+}
+.roundXl{
+    border-radius: 500px;
+}
+.primary{
+  background-color: #0095f6 ;
+
+  &:hover{
+    background-color: #1b59de;
+}
+}
+.normal{
+    &:hover{
+       background-color: rgba($color: #414141, $alpha: 0.5);
+       border-radius: 10px;
+    }
+}
+.grayText{
+    color: #333;
+}
+.facebookColor{
+    color:#385185;
+}

@@ -1,0 +1,27 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        justify-content:flex-start;
+        background-color: transparent;
+    }
+    .center{
+        flex-grow: 1;
+    }
+    
+}

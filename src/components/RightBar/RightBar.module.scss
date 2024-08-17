@@ -1,0 +1,266 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        display: none;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+//     .container{
+//         min-width: 340px;
+//         background-color: transparent;
+//         color: #fff;
+//         font-family: sans-serif;
+//         height: 100vh;
+//         position: fixed;
+//         padding-left: 64px;
+//         font-size: 12px;
+//     }
+//     .TopRight{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         // padding: 16px 0;
+    
+//     }
+    
+//     .content{
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         flex-grow: 1;
+//     }
+//     .avatarFrame{
+//         border-radius: 500px;
+//         height:50px;
+//         width: 50px;
+//         object-fit: cover;
+    
+//     }
+//     .nameFrame{
+//         display: flex;
+//         flex-direction: column;
+//         justify-self: flex-start;
+//         align-items: flex-start;
+//         margin-left: 6px;
+    
+//     }
+//     .username{
+//         color: #fff;
+//         font-weight: 600;
+//         font-size: 16px;
+    
+//     }
+//     .accountName{
+//         color: #c1c1c1;
+//         font-weight: 300;
+//         font-size: 16px;
+    
+//     }
+//     .primaryButton{
+//         max-width: 50px;
+//         color: #0095F6;
+//         font-size: 12px;
+//         font-weight: 600;
+//         text-align: right;
+//     }
+
+//     .centerRight{
+//         display: flex;
+//         flex-direction: column;
+//         padding:16px  0 16px 16px ;
+        
+//         .TopRight{
+//             padding: 4px 0;
+//         }
+    
+        
+//     }
+//     .titleSuggest{
+//         padding: 4px 0px 4px 16px;
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: center;
+//         font-size: 14px;
+        
+//         div{
+//             color: #fff;
+//             font-weight: 700;
+            
+//             &:last-child{
+//                 max-width: 50px ;
+//                 text-align: right;
+//             }
+//         }
+//     }
+//     .bottomRight{
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin-top: 8px;
+    
+//     }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container{
+        width: 340px;
+        background-color: transparent;
+        color: #fff;
+        font-family: sans-serif;
+        height: 100vh;
+        position: fixed;
+        padding-left: 64px;
+        font-size: 12px;
+        margin-top: 36px;
+
+        span{
+            text-align: left;
+            color: #666;
+            font-size: 12px;
+            padding: 6px;
+        }
+        a{
+            text-decoration: none;
+            color:#666
+        }
+    }
+    .TopRight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 16px;
+    
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        
+       
+    }
+    .imageAvatar{
+        max-width: 50px; 
+        text-align: left;
+        margin-right: 6px;
+    }
+    .avatarFrame{
+        border-radius: 500px;
+        height:44px;
+        width: 44px;
+        object-fit: cover;
+    
+    }
+    .nameFrame{
+        flex-grow: 1;
+        font-size: 14px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-self: flex-start;
+        // align-items: flex-start;
+        // margin-left: 6px;
+        div{
+           width: 100%;
+        }
+    
+    }
+    .username{
+        color: #fff;
+        font-weight: 600;
+        text-align: left;
+        width: 100%;
+    
+    }
+    .accountName{
+        color: #c1c1c1;
+        font-weight: 300;
+        text-align: left;
+        width: 100%;
+        font-size: 12px;
+    
+    }
+    .primaryButton{
+        max-width: 50px;
+        color: #0095F6;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: right;
+    }
+    .centerRight{
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+
+        .TopRight{
+            padding: 4px 0;
+        }
+    
+        
+    }
+    .titleSuggest{
+        padding: 4px 0px 10px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+        
+        div{
+            color: #fff;
+            font-weight: 700;
+            
+            &:last-child{
+                max-width: 50px ;
+                text-align: right;
+            }
+        }
+        .title{
+            color: #aba8a8;
+            text-align: left;
+        }
+    
+    }
+    .bottomRight{
+        
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+
+        div{
+            width: fit-content;
+            color: #666;
+            font-size: 12px;
+            margin-left: -5px;
+            margin-top: -10px;
+
+            &::after{
+                content: ".";
+                margin-left: 5px ;
+                margin-right: -5px;
+            }
+
+            &:last-child{
+                &::after{
+                    content: none;        
+                }
+            }
+            
+        }
+    
+    }
+}
