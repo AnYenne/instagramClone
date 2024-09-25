@@ -1,27 +1,25 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-
+body{
+    background-color: #000;
+}
+.container{
+    width: 100%;
+}
+// tablet
+@media (min-width: 740px) {
+    .rightbar{
+        display: none;
     }
 }
+/* PC medium resolution > */
+@media (min-width: 1113px) {
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .container{
-        display: flex;
-        padding: 0;
-        margin: 0;
-        height: 100vh;
-        width: 100vw;
-        justify-content:flex-start;
-        background-color: transparent;
-    }
-    .center{
-        flex-grow: 1;
-    }
-    
+}
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+
 }

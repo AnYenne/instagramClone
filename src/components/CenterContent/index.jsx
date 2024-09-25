@@ -8,7 +8,7 @@ const CenterContent = () => {
     
   return (   
        <div className={styles.container}>
-              <Stories />
+              <div className={styles.stories} ><Stories /> </div>
               <div className={styles.newFeedFrame}>newfeed</div>
       </div>
     

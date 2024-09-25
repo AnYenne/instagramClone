@@ -133,7 +133,7 @@ const Slide = ({size, css, children, storyFrame, lengthItems, lengthSlide}) => {
     // if
 
   return (
-    <div>
+    <div className={styles.container}>
         <div className={styles.content } style={{maxWidth:{lengthSlide}+'px'}}>
             <div className={styles.directButton}>
                 <div ref={previous}  className={styles.previousButton}>

@@ -1,63 +1,110 @@
-// // for medium mobile
-// @media only screen and (max-width: 600px) {
-//     .container{
-//         height: 48px;
-//         background-color: transparent;
-//         position: relative;
-//         bottom: 0;
-//         color: #fff;
-//         font-size: 20px;
-//         border-right: #676767 1px solid;
+// mobile <700
+.container{
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-        
-//     }
-//     .logoTop{
-//         display: none;
-//     }
-//     .center{
-//         display: flex;
-//         width: 100%;
-//         height: 100%;
-//         flex-direction: row;
-//         justify-content: space-around;
-//         align-items: center;
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoTop{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+.searchBar{
+    background-color: #3f3f3f;
+    display: flex;
+    max-width: 268px;
+    padding: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 5px;
+ }
+.iconSearch{
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    padding: 0 12px;
+}
 
-//         p{
-//             display: none;
-//         }
-        
-//     }
-//     .search{
-//         display: none;
-//         overflow: hidden;
-//     }
-//     .avatar{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     .avatarFrame{
-//         // display: none;   
-//         border-radius: 500px;
-//         height:24px;
-//         width: 24px;
-//         object-fit: cover;
-        
-//     }
-//     .settingBottom{
-//         display: none;
-    
-//     }
-       
-// }
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 600px) {}
+.inputSearch{
+    background-color: transparent;
 
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+    input{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 18px;
+
+    }
+    input::placeholder{
+        color: #fff;
+        opacity: 0.7;
+        font-size: 16px;
+    }
+
+}
+.notificationMobile{
+    width: fit-content;
+    height: 100%;
+}
+.center{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding-right: 12px;
+}
+
+.navItem{
+    margin: auto auto;    
+}
+.navItem div{
+    width: 100%;
+}
+.navItem span{
+    margin: 10px 14px;
+}
+
+
+.navItem img{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    object-position:80% 100%;
+}
+.navItem a{
+    color: #fff;
+}
+.center p{
+    display: none;
+}
+.settingBottom{
+    display: none;
+}
+// tablet
+@media (min-width: 740px) {
+    .rightbar{
+        display: none;
+    }
+    .center{
+        display: none;
+    }
+   
+}
+/* PC medium resolution > */
+@media (min-width: 1113px) {
     .container{
         height: 100%;
         width: 244px;
@@ -70,162 +117,99 @@
         font-size: 20px;
         border-right: #676767 1px solid;
     }
-    .logoTop{
-        height: 96px;
-        width: 100%;
-        text-align: left;
-        // padding-left: 20px;
-        font-size: 60px;
-        cursor: pointer;
+    // .logoTop{
+    //     height: 96px;
+    //     width: 100%;
+    //     text-align: left;
+    //     // padding-left: 20px;
+    //     font-size: 60px;
+    //     cursor: pointer;
     
-        svg{
-            width: fit-content;
-            margin-left: 22px;
-            margin-top: 40px;
-            height: 30%;
-        }
-    }
-    .center{
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
-        width: 100%;
-        // padding-left: 20px;
+    //     svg{
+    //         width: fit-content;
+    //         margin-left: 22px;
+    //         margin-top: 40px;
+    //         height: 30%;
+    //     }
+    // }
+    // .center{
+    //     flex-grow: 1;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    //     align-items: flex-start;
+    //     text-align: left;
+    //     width: 100%;
+    //     // padding-left: 20px;
     
-        p{
-            height: fit-content;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        span{
-            text-align: center;
-        }
+    //     p{
+    //         height: fit-content;
+    //         font-size: 16px;
+    //         font-weight: 500;
+    //     }
+    //     span{
+    //         text-align: center;
+    //     }
 
-        .navItem{
-            &:hover{
-                svg{
-                    font-size: 26px;
-                }
-            }
-            a{
-                color: #fff
-            }
-        }
+    //     .navItem{
+    //         &:hover{
+    //             svg{
+    //                 font-size: 26px;
+    //             }
+    //         }
+    //         a{
+    //             color: #fff
+    //         }
+    //     }
         
     
-    }
-    .avatarFrame{
-        border-radius: 500px;
-        height:30px;
-        width: 30px;
-        object-fit: cover;
-    }
-    .settingBottom{
-        width: 100%;
-        height: 142px;
-        text-align: left;
-        // padding-left: 20px;
-        p{
-            height: fit-content;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        span{
-            text-align: center;
-        }
+    // }
+    // .avatarFrame{
+    //     border-radius: 500px;
+    //     height:30px;
+    //     width: 30px;
+    //     object-fit: cover;
+    // }
+    // .settingBottom{
+    //     width: 100%;
+    //     height: 142px;
+    //     text-align: left;
+    //     // padding-left: 20px;
+    //     p{
+    //         height: fit-content;
+    //         font-size: 16px;
+    //         font-weight: 500;
+    //     }
+    //     span{
+    //         text-align: center;
+    //     }
 
-        .navItem{
-            &:hover{
-                svg{
-                    font-size: 26px;
-                }
-            }
-            a{
-                color: #fff
-            }
-        }
+    //     .navItem{
+    //         &:hover{
+    //             svg{
+    //                 font-size: 26px;
+    //             }
+    //         }
+    //         a{
+    //             color: #fff
+    //         }
+    //     }
     
-    }
-    .avatar{
-        width: fit-content;
-        margin: 10px 16px;
-    }
+    // }
+    // .avatar{
+    //     width: fit-content;
+    //     margin: 10px 16px;
+    // }
     
+
+}
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+   
 }
 
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {
-//      .container{
-//     height: 100%;
-//     width: 337px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: center;
-//     background-color: black;
-//     color: #fff;
-//     font-size: 20px;
-//     border-right: #676767 1px solid;
-// }
-// .logoTop{
-//     height: 96px;
-//     width: 100%;
-//     text-align: left;
-//     // padding-left: 20px;
-//     font-size: 60px;
-//     cursor: pointer;
 
-//     svg{
-//         width: fit-content;
-//         margin-left: 22px;
-//         margin-top: 40px;
-//         height: 30%;
-//     }
-// }
-// .center{
-//     flex-grow: 1;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//     text-align: left;
-//     width: 100%;
-//     // padding-left: 20px;
-
-//     p{
-//         height: fit-content;
-//         font-size: 16px;
-//         font-weight: 500;
-//     }
-//     span{
-//         text-align: center;
-//     }
-
-// }
-// .avatarFrame{
-//     border-radius: 500px;
-//     height:30px;
-//     width: 30px;
-//     object-fit: cover;
-// }
-// .settingBottom{
-//     width: 100%;
-//     height: 142px;
-//     text-align: left;
-//     // padding-left: 20px;
-//     p{
-//         height: fit-content;
-//         font-size: 16px;
-//         font-weight: 500;
-//     }
-
-// }
-// .avatar{
-//     width: fit-content;
-//     margin: 10px 16px;
-// }
+/* > PC low resolution */
+// @media (min-width: 1024px) and (max-width: 1239px) {
 
 // }
