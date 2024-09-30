@@ -9,9 +9,14 @@ const HomePage = () => {
  
   return (
     <div className={styles.container}>
-        <div className={clsx(styles.leftbar, '')}><LeftBar /></div>
-        <div className={clsx(styles.center, '')}><CenterContent /> </div>
-        <div className={clsx(styles.rightBar, '')}><RightBar/></div>
+        
+        <div className={clsx(styles.leftBar, '')}><LeftBar /></div>
+
+        <div className={styles.rightPC}>
+          <div className={clsx(styles.center, '')}><CenterContent /> </div>
+          <div className={clsx(styles.rightBar, '')}><RightBar/></div>
+        </div>
+       
     </div>
   )
 }

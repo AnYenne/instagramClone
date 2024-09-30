@@ -3,32 +3,46 @@
     height: 60px;
     width: 100%;
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1.5px solid #333;
     position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.top{
+.topMobile{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+}
+.topRightMobile{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 .logoTop{
-    display: block;
-    width: fit-content;
     height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 16px;
+
+    .iconInstagram{
+        display: none;
+    }
+  
 }
 .searchBar{
     background-color: #3f3f3f;
     display: flex;
     max-width: 268px;
     padding: 8px;
-    display: flex;
     justify-content: left;
     align-items: center;
     border-radius: 5px;
+    padding-right: 8px;
+    margin-right: 12px;
  }
 .iconSearch{
     width: fit-content;
@@ -39,7 +53,6 @@
 
 .inputSearch{
     background-color: transparent;
-
 
     input{
         outline: none;
@@ -58,12 +71,14 @@
 .notificationMobile{
     width: fit-content;
     height: 100%;
+    margin-right: 16px;
 }
 .center{
     display: flex;
     position: fixed;
     bottom: 0;
-    padding-right: 12px;
+   
+    border-top: 1px solid #333;
 }
 
 .navItem{
@@ -94,112 +109,195 @@
     display: none;
 }
 // tablet
-@media (min-width: 740px) {
-    .rightbar{
-        display: none;
-    }
-    .center{
-        display: none;
-    }
-   
-}
-/* PC medium resolution > */
-@media (min-width: 1113px) {
+@media (min-width: 767px) {
     .container{
         height: 100%;
-        width: 244px;
+        max-width: 72px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
+        padding: 8px 12px 20px;
+        border-right: 1px solid #333;
+        border-bottom: none;
+        position: fixed;
+    }
+    .topMobile{
+        width: 100%;
+        
+    }
+
+    .logoTop{
+        height: 92px;
+        width: 100%;
+        margin-left: 0px;
+        .iconInstagram{
+            display: block;
+            font-size: 20px;
+
+        }
+        
+    }
+    .textInstagram{
+        display: none;
+    }
+    .container  .textInstagram{
+        display: none;
+    }
+   
+    .topRightMobile{
+        display: none;
+    }
+    .center{
+        display: flex;
+        position:initial;
+        flex-direction: column;
+        width: fit-content;
+        height: 100%;
+        justify-content: flex-start;
+        border-top: none;
+    }
+    .navItem{
+        margin: -8px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .settingBottom{
+        display: block;
+        
+        .iconThread{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+    }
+
+   
+}
+/* PC medium resolution > */
+@media (min-width: 1263px) {
+    .container{
+        height: 100%;
+        width: 244px;
+        max-width: 244px;
         background-color: black;
         color: #fff;
         font-size: 20px;
         border-right: #676767 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: initial;
     }
-    // .logoTop{
-    //     height: 96px;
-    //     width: 100%;
-    //     text-align: left;
-    //     // padding-left: 20px;
-    //     font-size: 60px;
-    //     cursor: pointer;
-    
-    //     svg{
-    //         width: fit-content;
-    //         margin-left: 22px;
-    //         margin-top: 40px;
-    //         height: 30%;
-    //     }
-    // }
-    // .center{
-    //     flex-grow: 1;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: flex-start;
-    //     align-items: flex-start;
-    //     text-align: left;
-    //     width: 100%;
-    //     // padding-left: 20px;
-    
-    //     p{
-    //         height: fit-content;
-    //         font-size: 16px;
-    //         font-weight: 500;
-    //     }
-    //     span{
-    //         text-align: center;
-    //     }
-
-    //     .navItem{
-    //         &:hover{
-    //             svg{
-    //                 font-size: 26px;
-    //             }
-    //         }
-    //         a{
-    //             color: #fff
-    //         }
-    //     }
+    .topMobile{
+        display: block;
+    }
+    .topMobile .logoTop{
+        display: block;
+    }
+    .topRightMobile{
+       display: none;
+    }
+    .logoTop{
+        height: 92px;
+        width: 100%;
+        text-align: left;
+        // padding-left: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        .textInstagram{
+            width: fit-content;
+            margin-left: 12px;
+            margin-top: 40px;
+            height: 30%;
+            display: block;
+        }
+        .iconInstagram{
+            display: none;
+        }
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+        border-top: none;
         
     
-    // }
-    // .avatarFrame{
-    //     border-radius: 500px;
-    //     height:30px;
-    //     width: 30px;
-    //     object-fit: cover;
-    // }
-    // .settingBottom{
-    //     width: 100%;
-    //     height: 142px;
-    //     text-align: left;
-    //     // padding-left: 20px;
-    //     p{
-    //         height: fit-content;
-    //         font-size: 16px;
-    //         font-weight: 500;
-    //     }
-    //     span{
-    //         text-align: center;
-    //     }
+        p{  
+            display: block;
+            height: fit-content;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        span{
+            text-align: left;
+            width: fit-content;
+            
+            img{
+                height: 26px;
+                width: 26px;
+            }
+        }
 
-    //     .navItem{
-    //         &:hover{
-    //             svg{
-    //                 font-size: 26px;
-    //             }
-    //         }
-    //         a{
-    //             color: #fff
-    //         }
-    //     }
+        .navItem{
+            &:hover{
+                svg{
+                    font-size: 26px;
+                }
+            }
+            a{
+                color: #fff
+            }
+        }
+        
     
-    // }
-    // .avatar{
-    //     width: fit-content;
-    //     margin: 10px 16px;
-    // }
+    }
+    .avatarFrame{
+        border-radius: 500px;
+        height:30px;
+        width: 30px;
+        object-fit: cover;
+    }
+    .settingBottom{
+        width: 100%;
+        height: 142px;
+        text-align: left;
+        // padding-left: 20px;
+        
+        .iconThread{
+            display: block;
+        }
+
+        p{  
+            display: block;
+            height: fit-content;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        span{
+            text-align: center;
+        }
+
+        .navItem{
+            &:hover{
+                svg{
+                    font-size: 26px;
+                }
+            }
+            a{
+                color: #fff
+            }
+        }
+    
+    }
+    .avatar{
+        width: fit-content;
+        margin: 10px 16px;
+    }
     
 
 }

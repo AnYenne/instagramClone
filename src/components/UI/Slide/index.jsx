@@ -4,6 +4,11 @@ import { useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
 faCircleChevronRight
+
+
+// edit this file if has bug with direction of stories, size length,...
+
+
 const Slide = ({size, css, children, storyFrame, lengthItems, lengthSlide}) => {
   const previous = useRef();
   const next = useRef();

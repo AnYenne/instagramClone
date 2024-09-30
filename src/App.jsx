@@ -31,7 +31,6 @@ function App() {
       <Route path="/" element={<Thread />} />
       <Route path="/setting" element={<Setting />} /> */}
     </Routes>
-      
 }
     
     </div>
