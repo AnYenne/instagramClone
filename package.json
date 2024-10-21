@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "nodemon --inspect ./backend/src/index.cjs",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 -cjs -hbs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,7 +17,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "clsx": "^2.1.1",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
     "fontawesome": "^5.6.3",
+    "mongoose": "^8.7.1",
     "prettier": "^3.3.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -31,6 +35,8 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
     "vite": "^5.3.1"
   }
 }

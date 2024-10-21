@@ -1,0 +1,182 @@
+.container{
+    width: 100%;
+    max-width: 474px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+.avatar{
+    width: fit-content;
+    height: fit-content;
+}
+.contentHeader{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.contentHeaderName{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.username,
+.greenstick,
+.timeline {
+    width: fit-content;
+    padding: 0 4px;
+
+}
+.username{
+    padding: 0;
+}
+.musicSong{
+    width: fit-content;
+    font-size: 14px;
+}
+
+.avatarFrame{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:3px solid rgba($color: orange, $alpha: 1.0);
+    object-fit: cover;
+    margin-right: 8px;
+}
+.more{
+    width: fit-content;
+}
+.moreIcon{
+    color: #fff;
+}
+.body{
+    width: 100%;
+    max-width: 467px;
+    max-height: 596px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.images{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.videoPost{
+    width: 330px;
+    margin: 0 calc((467px - 330px)/2);
+    height: 596px;
+}
+.direction{
+    position: absolute;
+    width: 100%;
+}
+.directionBtns{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+.directBtn{
+    color:#fff;
+    width: fit-content;
+    opacity: 0.8;
+    
+   
+}
+.directBtn:hover{
+    cursor: pointer;
+}
+
+.selectDirection{
+
+}
+.detail{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.functions{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.functionLeft{
+    color: #fff;
+    display: flex;
+    width: fit-content;
+    
+    .like{
+        padding-right: 4px;
+    }
+    .comment,
+    .direct{
+        padding: 0 4px;
+    }
+    
+}
+.functionRight{
+    color: #fff;
+    width: fit-content;
+}
+.likeTotal{
+    width: fit-content;
+    font-weight: 600;
+}
+.postContent{
+    width: fit-content;
+    
+    .user{
+        font-weight: 600;
+
+    }
+    .caption{
+        color: #fff;
+        font-size: 14px;
+    }
+}
+.viewComment{
+    text-align: left;
+    color: #555;
+    font-size: 14px;
+}
+.writeComment{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input{
+        background-color: transparent;
+        padding: 8px 0;
+        border: none;
+        outline: none;
+        flex-grow: 1;
+        color: #fff;
+    }
+    .emotionIcon{
+        padding-left: 12px;
+        width: fit-content;
+    }
+}

@@ -1,0 +1,170 @@
+.container{
+    color: #fff;
+    padding-top: 100px;
+}
+.accountDetails{
+    margin: 0 auto;
+    
+}
+.detailsHeader{
+    display: flex;
+    position: relative;
+}
+.avatar{
+    width: 100%;
+    height: 100%;
+}
+
+.avatarFrame{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+.inforDetails{
+    display: flex;
+
+}
+.mobileAccountDetails{
+    position: absolute;
+    max-width: 638px;
+
+}
+.usernameDetailsLines{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.username{
+    font-size: large;
+    text-align: left;
+
+}
+.functionbtn{
+    border-radius: 5px;
+    padding: 4px;
+    background-color: blue;
+}
+.functionbtn + .functionbtn {
+    margin-top: 5px;
+}
+
+.otherbtn{
+    color: #fff;
+}
+.numberDetailsLines{
+    display: flex;
+    font-weight: 600;
+    text-align: left;
+    margin: 4px 0;
+}
+.nameDetailsLines{
+    text-align: left;
+    margin: 6px 0;
+    font-weight: 600;
+
+    
+}
+.bioDetailsLines{
+    text-align: left;
+    margin: 4px 0;
+
+    
+}
+.contentsDetailsLines{
+    text-align: left;
+    margin: 4px 0;
+
+    
+}
+.accountContents{
+    
+}
+@media (min-width: 767px) {
+    .detailsHeader{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .avatar{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .avatarFrame{
+        width: 156px;
+        height: 156px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    
+        .inforDetails{
+
+    }
+
+    .usernameDetailsLines{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .username{
+        font-size: large;
+        text-align: left;
+
+    }
+    .functionbtn{
+        border-radius: 5px;
+        padding: 4px;
+        background-color: blue;
+        margin: 0 6px;
+    }
+    .functionbtn + .functionbtn {
+        margin: 0 6px;
+    }
+
+    .otherbtn{
+        color: #fff;
+    }
+    .numberDetailsLines{
+        display: flex;
+        font-weight: 600;
+        text-align: left;
+        margin: 4px 0;
+    }
+    .nameDetailsLines{
+        text-align: left;
+        margin: 6px 0;
+        font-weight: 600;
+
+        
+    }
+    .bioDetailsLines{
+        text-align: left;
+        margin: 4px 0;
+
+        
+    }
+    .contentsDetailsLines{
+        text-align: left;
+        margin: 4px 0;
+
+        
+    }
+    .accountContents{
+        
+    }
+    }
+
+@media (min-width: 1113px) {
+    .avatarFrame{
+        width: 120px;
+        height: 120px;
+    }
+        
+}
