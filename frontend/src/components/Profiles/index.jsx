@@ -1,9 +1,16 @@
+// 1. Import thư viện từ bên thứ ba.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import clsx from 'clsx'
+import { faArchive } from '@fortawesome/free-solid-svg-icons'
+// 2. Import các module liên quan đến React.
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
+import GallaryPost from '../UI/GallarysPost'
+
+// 6. Import các style.
 import '../../Responsive.css'
 import styles from './Profiles.module.scss'
-import { faArchive } from '@fortawesome/free-solid-svg-icons'
-import clsx from 'clsx'
-import GallaryPost from '../UI/GallarysPost'
 const Profile = () => {
 
     const examplePost = [{

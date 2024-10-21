@@ -1,11 +1,19 @@
-import React, { useEffect, useRef, useState,} from 'react'
-import styles from './Post.module.scss'
+// 1. Import thư viện từ bên thứ ba.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck, faCircleChevronLeft, faCircleChevronRight, faSave, faStickyNote } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
 import { faIcons, faMessage } from '@fortawesome/free-solid-svg-icons'
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons/faEllipsis'
 import { faBookmark, faComment, faFaceSmile, faPaperPlane } from '@fortawesome/free-regular-svg-icons'
+
+// 2. Import các module liên quan đến React.
+import React, { useEffect, useRef, useState,} from 'react'
+
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
+// 6. Import các style.
+import styles from './Post.module.scss'
 
 const Post = () => {
 

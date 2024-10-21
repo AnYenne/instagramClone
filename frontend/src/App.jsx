@@ -10,19 +10,13 @@ import ProfilesPage from './pages/ProfilesPage'
 
 import { GuestPage, Story } from './pages'
 import Profile2 from './components/ProfilesCopy'
+import SigninPage from './pages/SigninPage'
 function App() {
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState(false)
 
   return (
     <div className='container darkTheme'>
-    {!login ? ( <div className='container'>
-    <div >
-      <MobileDevice />
-      <LoginForm />
-    </div>
-    <Footer/>
-    </div>  
-  ) :
+    {!login ? ( <SigninPage />) :(
 
     <Routes>
       <Route path="/" element={<HomePage />} />
@@ -35,6 +29,7 @@ function App() {
       <Route path="/" element={<Thread />} />
       <Route path="/setting" element={<Setting />} /> */}
     </Routes>
+    )
 }
     
     </div>

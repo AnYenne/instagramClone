@@ -1,6 +1,12 @@
-import styles from './Footer.module.scss'
-import React from 'react'
+// 1. Import thư viện từ bên thứ ba.
+// 2. Import các module liên quan đến React.
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
 import Button from '../UI/Button'
+
+// 6. Import các style.
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (

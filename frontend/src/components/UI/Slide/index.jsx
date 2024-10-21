@@ -1,9 +1,16 @@
-import React, { useEffect, useState, useLayoutEffect } from 'react'
-import styles from './Slide.module.scss'
-import { useRef } from 'react'
+// 1. Import thư viện từ bên thứ ba.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
-faCircleChevronRight
+
+// 2. Import các module liên quan đến React.
+import React, { useEffect, useState, useLayoutEffect } from 'react'
+import { useRef } from 'react'
+
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
+// 6. Import các style.
+import styles from './Slide.module.scss'
 
 
 // edit this file if has bug with direction of stories, size length,...

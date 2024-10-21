@@ -1,7 +1,13 @@
-import styles from './CenterContent.module.scss'
+// 1. Import thư viện từ bên thứ ba.
+// 2. Import các module liên quan đến React.
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
 import Stories from '../Stories'
 import Post from '../UI/Post'
-import React from 'react'
+// 6. Import các style.
+import styles from './CenterContent.module.scss'
+
 
 const CenterContent = () => {
   

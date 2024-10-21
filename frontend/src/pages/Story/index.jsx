@@ -1,8 +1,15 @@
-import {useEffect, useState} from 'react'
-import styles from './Story.module.scss'
+// 1. Import thư viện từ bên thứ ba.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faVolumeHigh,faEllipsis, faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faPaperPlane, faHeart } from '@fortawesome/free-regular-svg-icons'
+// 2. Import các module liên quan đến React.
+import {useEffect, useState} from 'react'
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
+// 6. Import các style.
+import styles from './Story.module.scss'
+
 function Story(){
     useState()
     useEffect(()=>{

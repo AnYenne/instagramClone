@@ -1,7 +1,15 @@
-import Profile from '../../components/Profiles';
-import styles from './ProfilesPage.module.scss';
-import LeftBar from '../../components/LeftBar';
+// 1. Import thư viện từ bên thứ ba.
 import clsx from 'clsx';
+// 2. Import các module liên quan đến React.
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
+import Profile from '../../components/Profiles';
+import LeftBar from '../../components/LeftBar';
+
+// 6. Import các style.
+import styles from './ProfilesPage.module.scss';
+
 
 const ProfilesPage = () => {
   return (

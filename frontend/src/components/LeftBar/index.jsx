@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+// 1. Import thư viện từ bên thứ ba.
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faMagnifyingGlass,faCompass
@@ -14,12 +13,19 @@ import { faHouse, faMagnifyingGlass,faCompass
     faHeartCircleCheck,
 } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookMessenger, faInstagram, faThreads } from '@fortawesome/free-brands-svg-icons'
-import { width } from '@fortawesome/free-brands-svg-icons/fa42Group'
 import { divide } from 'fontawesome'
-import styles from './LeftBar.module.scss'
-import Button from '../UI/Button'
-import clsx from 'clsx'
 import { faHeartCircleBolt } from '@fortawesome/free-solid-svg-icons/faHeartCircleBolt'
+
+import clsx from 'clsx'
+// 2. Import các module liên quan đến React.
+import React from 'react'
+import { useState } from 'react'
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
+import Button from '../UI/Button'
+// 6. Import các style.
+import styles from './LeftBar.module.scss'
 
 const LeftBar = () => {
     const [username, setUserName] = useState('met_shin')

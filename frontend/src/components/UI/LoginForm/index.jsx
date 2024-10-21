@@ -1,7 +1,15 @@
-import React, { useState } from 'react'
+// 1. Import thư viện từ bên thứ ba.
 import clsx from 'clsx'
-import styles from './LoginForm.module.scss'
+// 2. Import các module liên quan đến React.
+import React, { useState } from 'react'
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
 import Button from '../Button/index.jsx'
+// 6. Import các style.
+import styles from './LoginForm.module.scss'
+
+
 const LoginForm = () => {
   const [userName, setUserName] = useState('guest')
   const [signed, setSigned] = useState(false)
