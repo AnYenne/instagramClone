@@ -14,18 +14,19 @@ import { faHouse, faMagnifyingGlass,faCompass
 } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookMessenger, faInstagram, faThreads } from '@fortawesome/free-brands-svg-icons'
 import { divide } from 'fontawesome'
-import { faHeartCircleBolt } from '@fortawesome/free-solid-svg-icons/faHeartCircleBolt'
 
-import clsx from 'clsx'
 // 2. Import các module liên quan đến React.
 import React from 'react'
 import { useState } from 'react'
 // 3. Import các helper, utils, constants.
 // 4. Import các actions và selectors.
 // 5. Import các components.
-import Button from '../UI/Button'
 // 6. Import các style.
+
 import styles from './LeftBar.module.scss'
+import Button from '../UI/Button'
+import clsx from 'clsx'
+import { faHeartCircleBolt } from '@fortawesome/free-solid-svg-icons/faHeartCircleBolt'
 
 const LeftBar = () => {
     const [username, setUserName] = useState('met_shin')

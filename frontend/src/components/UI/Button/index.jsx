@@ -1,4 +1,3 @@
-
 // 1. Import thư viện từ bên thứ ba.
 import clsx from 'clsx'
 
@@ -43,7 +42,6 @@ const Button = ({primary, children,
   })
   return (
     <div className={clsx(classes, 'margin' ) }  style={stylesCustom}>
-      {console.log(stylesCustom)}
         {children}
     </div>
   )

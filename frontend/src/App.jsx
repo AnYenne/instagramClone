@@ -1,16 +1,24 @@
 
+// 1. Import thư viện từ bên thứ ba.
 import { useState } from 'react'
 import {Routes,Route} from 'react-router-dom'
-import './App.css'
+// 2. Import các module liên quan đến React.
+// 3. Import các helper, utils, constants.
+// 4. Import các actions và selectors.
+// 5. Import các components.
 import Footer from './components/Footer'
 import LoginForm from './components/UI/LoginForm'
 import MobileDevice from './components/UI/MobileDevice'
+import Profile2 from './components/ProfilesCopy'
+
 import HomePage from './pages/HomePage'
 import ProfilesPage from './pages/ProfilesPage'
-
 import { GuestPage, Story } from './pages'
-import Profile2 from './components/ProfilesCopy'
 import SigninPage from './pages/SigninPage'
+// 6. Import các style.
+import './App.css'
+
+
 function App() {
   const [login, setLogin] = useState(false)
 

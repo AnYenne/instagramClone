@@ -6,11 +6,12 @@ import React, { useState } from 'react'
 // 4. Import các actions và selectors.
 // 5. Import các components.
 import Button from '../Button/index.jsx'
+
 // 6. Import các style.
 import styles from './LoginForm.module.scss'
 
 
-const LoginForm = () => {
+const LoginForm = (outline=false) => {
   const [userName, setUserName] = useState('guest')
   const [signed, setSigned] = useState(false)
   const data = {
@@ -22,7 +23,8 @@ const LoginForm = () => {
    {!signed && (
     <div className={styles.container}>
       {/* container */}
-      <div className={clsx(styles.outlineForm)}>
+
+      <div className={clsx((outline ? 'styles.outlineForm' : 'styles.outlineFormMobile'))}>
           <div className={styles.wrap}>
               <div>
                   {/* input section */}
@@ -59,7 +61,7 @@ const LoginForm = () => {
    
       <div className={ styles.signUpform}>
               {/* sign up section  */}
-        <div className={clsx(styles.outlineForm,)}>
+        <div className={clsx((outline ? 'styles.outlineForm' : 'styles.outlineFormMobile'))}>
           <span>Don't have an account?
             <a className={'.primaryLight'} href='/'>Sign up</a>
           </span>
@@ -83,7 +85,7 @@ const LoginForm = () => {
     {/* signedIn once */}
    {signed && ( <div className={styles.container}>
       {/* container */}
-      <div className={clsx(styles.outlineForm)}>
+      <div className={clsx((outline ? 'styles.outlineForm' : 'styles.outlineFormMobile'))}>
           <div className={styles.wrap}>
               <div>
                   <img className={styles.img} src='images.png' />
