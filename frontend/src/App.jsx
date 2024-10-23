@@ -15,6 +15,7 @@ import HomePage from './pages/HomePage'
 import ProfilesPage from './pages/ProfilesPage'
 import { GuestPage, Story } from './pages'
 import SigninPage from './pages/SigninPage'
+import SignUpPage from './pages/SignUpPage'
 // 6. Import các style.
 import './App.css'
 
@@ -31,6 +32,8 @@ function App() {
       <Route path='/story' element={<Story />} />
       <Route path='/pf' element={<ProfilesPage />} />
       <Route path='/pf2' element={<Profile2 />} />
+      <Route path='/signup' element={<SignUpPage />} />
+      <Route path='/signin' element={<SigninPage />} />
       {/* <Route path="/message" element={<Message />} />
       <Route path="/explore" element={<Explore />} />
       <Route path="/profile" element={<Profile />} />
