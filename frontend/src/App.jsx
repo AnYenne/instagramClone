@@ -21,18 +21,18 @@ import './App.css'
 
 
 function App() {
-  const [login, setLogin] = useState(false)
+  const [login, setLogin] = useState(true)
 
   return (
     <div className='container darkTheme'>
-    {!login ? ( <SigninPage />) :(
+    {!login ? ( <SigninPage />) :( 
 
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path='/story' element={<Story />} />
       <Route path='/pf' element={<ProfilesPage />} />
       <Route path='/pf2' element={<Profile2 />} />
-      <Route path='/signup' element={<SignUpPage />} />
+      <Route path='/accounts/emailsignup' element={<SignUpPage />} />
       <Route path='/signin' element={<SigninPage />} />
       {/* <Route path="/message" element={<Message />} />
       <Route path="/explore" element={<Explore />} />

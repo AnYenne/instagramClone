@@ -7,21 +7,21 @@ import { useState } from 'react'
 // 5. Import các components.
 import LoginForm from '../../components/UI/LoginForm'
 import NavigationGuest from '../../components/NavigationGuest'
+import SignUpform from '../../components/UI/SignUpform'
 // 6. Import các style.
 import styles from './SignUpPage.module.scss'
+import Footer from '../../components/Footer'
 
 const SignUpPage = () => {
-  var mobile = true
   return (
     < div className={styles.container}>
-      {mobile &&( <div >
-        <div className={styles.loginform}>
+        <div className={styles.signupform}>
           <SignUpform/>
         </div>
-        {/* <div className={styles.leftbar}>
-          <NavigationGuest />
-        </div> */}
-      </div>)}
+        <div className={styles.footer}>
+          <Footer />
+        </div>
+       
     </div >
    
   )

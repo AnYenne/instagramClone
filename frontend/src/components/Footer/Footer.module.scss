@@ -1,26 +1,33 @@
 .title{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: #969393;
-
+    color: #a8a8a8;
+    font-size: 12px;
 }
 .infor{
     margin: 12px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
     
     select{
         outline: none;
         border: none;
         background-color: transparent;
         color: #969393;
+        width: fit-content;
+        font-size: 12px;
+    
     }
 
     p{
         margin-left: 14px;
         color: #969393;
+        width: fit-content;
         font-size: 14px;
+
     }
 }

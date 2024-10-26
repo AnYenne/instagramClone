@@ -1,12 +1,34 @@
 .container{
     width: 100%;
     height: 100%;
+    margin: 200px 0;
+    max-width: 864px;
+    max-height: 80px;
+    
+}
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.mobileSlide{
+    display: none;
+    
 }
 .loginform{
-
+    display: block;
+    max-width: 352px;
+    max-height: 592px;
 }
 .leftbar{
+   display: block;
+}
+.footer{
     width: 100%;
+    height: 100%;
 }
 @media (min-width: 767px) {
     .leftbar{
@@ -16,6 +38,19 @@
 @media (min-width: 1263px) {
     .leftbar{
         display: none;
+    }
+    .mobileSlide{
+       width: fit-content;
+       height: fit-content;
+       display: block;
+    }
+    .loginform{
+        display: block;
+        width: 352px;
+        height: 592px;
+    }
+    .footer{
+        padding: 60px 0;
     }
 }
 @media (min-width: 740px) and (max-width: 1023px) {

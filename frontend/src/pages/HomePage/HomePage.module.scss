@@ -50,16 +50,26 @@ body{
 }
 /* PC medium resolution > */
 @media (min-width: 1263px) {
+    .container{
+        display: flex;
+    }
     .leftBar{
         height: 100%;
+        width: fit-content;
+
     }
     .rightPC{
-        justify-content: center;
+        width: fit-content;       
+        display: block; 
     }
     .rightBar{
     display: block;
     height: 100%;
     max-width: 340px;
+    }
+    .center{
+        margin-left: 210px;
+        padding-top: 36px;
     }
 
 }
