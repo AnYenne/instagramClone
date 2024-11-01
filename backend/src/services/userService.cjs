@@ -7,6 +7,12 @@ class UserService {
         var data = await Users.find({})
         return data
     }
+
+    //Find only 1 user from API
+    async fetchUser(id){
+        var data = await Users.find({_id: id})
+        return data
+    }
    
 }
 
