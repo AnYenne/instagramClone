@@ -112,9 +112,23 @@
     padding: 14px;
 }
 .accountContents div{
+    width: calc(100% / 4);
+    padding: 4px;
+    font-size: 24px;
+    // border: 1px solid white;
+}
+.accountContents div svg{
+    // background-color: palegreen;
     width: fit-content;
 }
 
+.accountContents div.active svg{
+    color:#1877F2;
+}
+
+.accountContents div span{
+     display: none;
+}
 // @media (min-width: 767px) {
 //     .detailsHeader{
 //         display: flex;

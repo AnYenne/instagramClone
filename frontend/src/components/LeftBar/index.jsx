@@ -129,7 +129,7 @@ const LeftBar = () => {
                </div>
 
             <div className={styles.navItem}>
-               <Link to="">
+               <Link to="/pf">
 
                <Button btn normal stylesCustom={{display: "flex", alignItems: 'center', width: '100%', justifyContent: 'center'}}>
             <span >
@@ -196,7 +196,7 @@ const LeftBar = () => {
                     </div>
 
             <div className={styles.navItem}>
-               <Link to="">
+               <Link to="/pf">
                <Button btn normal stylesCustom={{display: "flex", alignItems: 'center', width: '100%', justifyContent: 'flex-start'}}>
             <span className={styles.avatar}>
                   <img src={username.avatar || '/images.png'} className={styles.avatarFrame} />

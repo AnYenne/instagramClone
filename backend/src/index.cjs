@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express');
 const app = express();
+const cors = require('cors')
 const { engine} = require('express-handlebars');
 const router = require('./routers/index.cjs')
 const connectDb = require('./config/db.cjs')
@@ -8,6 +9,9 @@ const connectDb = require('./config/db.cjs')
 
 //connect to DB
 connectDb()
+
+//allow frontend connect
+app.use(cors())
 
 
 // template engine
