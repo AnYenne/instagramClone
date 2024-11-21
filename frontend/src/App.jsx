@@ -18,6 +18,7 @@ import SigninPage from './pages/SigninPage'
 import SignUpPage from './pages/SignUpPage'
 // 6. Import các style.
 import './App.css'
+import CreatePost from './components/UI/CreatePost'
 
 
 function App() {
@@ -32,7 +33,9 @@ function App() {
       <Route path='/story' element={<Story />} />
       <Route path='/pf' element={<ProfilesPage />} />
       <Route path='/pf2' element={<Profile2 />} />
+      <Route path='/create/post' element={<CreatePost />} />
       <Route path='/accounts/emailsignup' element={<SignUpPage />} />
+      <Route path='/signup' element={<SignUpPage />} />
       <Route path='/signin' element={<SigninPage />} />
       {/* <Route path="/message" element={<Message />} />
       <Route path="/explore" element={<Explore />} />

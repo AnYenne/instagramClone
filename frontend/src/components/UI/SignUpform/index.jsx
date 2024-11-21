@@ -16,6 +16,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faCheckCircle, faXmarkCircle } from '@fortawesome/free-regular-svg-icons';
 
 const SignUpform = (outline=true) => {
+  const localhost = 'http://localhost:5000/api/users/register'
   const [userName, setUserName] = useState('guest')
   const [showPass, setShowPass] = useState(false)
   const data = {
@@ -80,13 +81,29 @@ const SignUpform = (outline=true) => {
                   initialValues={initValue}
                   validationSchema={signupSchema}
                   onSubmit={values => {
+                    const data = {
+                      username: values.username,
+                      password: values.password,
+                      email: values.mobileNumberEmail,
+                      confirmPassword: values.password,
+                    }
+                    fetch(localhost,{
+                      method: 'POST',
+                      headers:{
+                        'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify(data)
+                    })
+                    .then(response => response.json())
+                    .then(json => console.log(json))
+                    .catch(error => console.error('Error:', error));
                     console.log(values)
                   }}
               >
                 {function({errors,touched,values}){
                   return(
                    
-                  <Form>
+                  <Form >
                     <div className={styles.formSignup}>
                      <div className={styles.inputContainer}>
                           <Field className={styles.inputSection} name='mobileNumberEmail' type='text' placeholder='Mobile Number or Email'/>
